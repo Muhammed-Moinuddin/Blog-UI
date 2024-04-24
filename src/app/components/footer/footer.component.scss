@@ -1,0 +1,28 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #363A3D;
+    padding: 2% 4%;
+    margin-top: 2%;
+    border-top: 1px solid #d8d8d8;
+  
+    .left-section {
+      p {
+        margin: 0;
+        font-size: 18px;
+        color: #d8d8d8;
+        font-family: 'Lato';
+        opacity: 0.7;
+      }
+    }
+  
+    .right-section {
+      a {
+        margin-left: 10px;
+        color: #333; // You can adjust the color as needed
+        font-size: 20px; // You can adjust the size as needed
+      }
+    }
+  }
+  

@@ -1,0 +1,145 @@
+.hero {
+    background-image: url('https://live.staticflickr.com/2232/1914207390_f9118ff235_o.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    
+    @media screen and (max-width: 768px) {
+      height: 550px; /* Adjust height for smaller screens */
+    }
+  }
+  
+  .hero-content {
+    color: #fff;
+    text-align: left;
+    padding-left: 5%;
+    
+    h1 {
+      font-size: 64px;
+      font-family: 'Lato';
+      line-height: 1.6;
+    }
+    p {
+      margin-top: 3%;
+      width: 60%;
+      font-size: 26px;
+      font-family: 'Noto_Serif';
+      font-style: bold;
+      opacity: 0.7;
+    }
+    .hero-date{
+      font-family: 'Lato';
+      font-size: 21px;
+    }
+    .hero-btns{
+      display: flex;
+      align-items: center;
+      justify-content: start;
+      font-family: 'Lato';
+      margin-top: 5%;
+    }
+    .hero-read-btn {
+      font-size: 18px;
+      width: 16%;
+      cursor: pointer;
+      text-align: left;
+      font-weight: 600;
+      background-color: transparent;
+      border: none;
+      color: #f9f9f9;
+      
+    }
+    .hero-icons{
+      opacity: 0.7;
+    }
+    .hero-likes, .hero-comments{
+      width: 6%;
+      padding-left: 2%;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+  .like-numbers, .comment-numbers{
+    font-family: 'Lato';
+    opacity: 1;
+  }
+    
+    @media screen and (max-width: 768px) {
+      h1 {
+        font-size: 28px; /* Adjust font sizes for smaller screens */
+      }
+  
+      h2 {
+        font-size: 20px;
+      }
+  
+      p {
+        font-size: 14px;
+      }
+  
+      .btn {
+        font-size: 12px;
+      }
+    }
+  }
+  
+  .blogs {
+    margin-top: -12%;
+    padding-bottom: 40px;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @media screen and (max-width: 768px) {
+      padding: 20px 0; /* Adjust padding for smaller screens */
+    }
+  }
+  
+  .blog-grid {
+    display: grid;
+    width: 90%;
+    grid-template-columns: repeat(3, 1fr);
+    
+  
+    @media screen and (max-width: 768px) {
+      grid-template-columns: repeat(1, 1fr); /* Change to single column layout for smaller screens */
+    }
+  }
+  
+  .blog {
+    background-color: #f9f9f9; /* Adjust background color for blogs */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add shadow for each blog */
+  
+    h2,
+    h3,
+    p {
+      margin-top: 0;
+    }
+  
+    .btn {
+      background-color: #333;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+  
+      &:hover {
+        background-color: #555; /* Change color on hover */
+      }
+    }
+  
+    .icons {
+      margin-top: 10px;
+      /* Add styles for icons */
+    }
+  }
+  
